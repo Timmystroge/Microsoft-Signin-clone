@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #0699c6;
+}
+.container {
+    /* size and style  */
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #eadcd9, #d1dbe5, #eee7cb);
+    
+}
+.container-box {
+    /* positioning */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* size and style  */
+    width: 348px;
+    height: 300px;
+    background: #ffffff;
+    /* spacing  */
+    padding: 40px 35px;
+    /* box shadow  */
+    box-shadow: 1px 3px 3px -2px #54545498;
+}
+
+/* // logo  */
+.logo {
+    /* spacing  */
+    margin-bottom: 20px;
+}
+/* // header  */
+.header h3{
+    /* spacing  */
+    margin-bottom: 10px;
+}
+.header h3 {
+    font-size: 18px;
+    color: #545454eb;
+}
+/* // form  */
+.form {
+    margin-bottom: 15px;
+}
+.form-control {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    color: #545454;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid  #545454bb;
+    margin-bottom: 15px;
+}
+.form-control::placeholder {
+    font-size: 14px;
+}
+
+/* // create account  */
+.create-account p {
+    color: #545454eb;
+    margin-bottom: 25px;
+}
+
+/* / button  */
+.btn-container .btn {
+   width: 80px;
+   height: 30px;
+   border-radius: 0;
+   border:none;
+   outline: none;
+   float: right;
+}
+.btn-container .btn-primary {
+    background-color: #0565bc;
+    color: white;
+    font-weight: 300px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.btn-container .btn-primary:hover {
+    background-color: #005aae;
+}
+
+/* // footer  */
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.footer div p {
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 425px) {
+    .container-box {
+        width: 300px;
+        
+    }
+    .footer {
+        bottom: 5px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 323px) {
+    .container-box {
+        width: 280px;
+        padding: 35px 20px;
+    }
+    .footer {
+        bottom: 5px;
+        right: 5px;
+    }
+}
+@media (max-width: 280px) {
+    .container-box {
+        width: 270px;
+        padding: 35px 20px;
+    }
+    .footer {
+        bottom: 5px;
+        right: 2px;
+    }
+}
